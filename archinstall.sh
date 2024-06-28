@@ -38,9 +38,12 @@ echo ' \______  /___| |____|   '
 echo '        \/                '
 
 sleep 1
-mkdir .suckless && cd .suckless
+mkdir .suckless
 
 git clone https://github.com/Fayaz-246/archinstall-dots.git
+
+mv dwm dwmblocks dmenu .suckless/
+cd .suckless
 
 sleep 3
 
@@ -76,6 +79,7 @@ cd ~
 cd .config
 
 git clone https://github.com/Fayaz-246/archinstall-configs.git 
+mv kitty dunst ../
 
 echo '___________ _______  ________  ___________________         _______________________________ ________   ___________________'
 echo '\_   _____/ \      \ \______ \ \_   _____/\______ \        \______   \_   _____/\______   \\_____  \  \_____  \__    ___/'
