@@ -10,7 +10,7 @@ echo '       \__>       \/      \/         \/ '
 
 sudo pacman -Syu
 sudo pacman -S xorg
-sudo pacman -S git dunst nitrogen libx11 libxft bxinerama freetype2 fontconfig base-devel kitty bat thunar thunar-volman fastfetch
+sudo pacman -S git dunst nitrogen libx11 libxft xinerama freetype2 fontconfig base-devel kitty bat thunar thunar-volman fastfetch
  
 echo '_____.___.  _____ _____.___.'
 echo '\__  |   | /  _  \\__  |   |'
