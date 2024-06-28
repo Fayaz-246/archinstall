@@ -8,8 +8,8 @@ echo '\_____\ \_/_______  /\__/\  /\____|__  /'
 echo '       \__>       \/      \/         \/ '
 
 
-# sudo pacman -Syu
-#
+ sudo pacman -Syu
+
 sudo pacman -S git dunst nitrogen xorg libx11 libxft bxinerama freetype2 fontconfig base-devel kitty bat thunar thunar-volman fastfetch
 
 echo '_____.___.  _____ _____.___.'
