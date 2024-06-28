@@ -10,8 +10,10 @@ echo '       \__>       \/      \/         \/ '
 
 sudo pacman -Syu
 sudo pacman -S xorg
-sudo pacman -S git dunst nitrogen libx11 libxft xinerama freetype2 fontconfig base-devel kitty bat thunar thunar-volman fastfetch
- 
+sudo pacman -S git dunst nitrogen libx11 libxft libxinerama freetype2 fontconfig base-devel kitty bat thunar thunar-volman fastfetch
+
+sleep 5
+
 echo '_____.___.  _____ _____.___.'
 echo '\__  |   | /  _  \\__  |   |'
 echo ' /   |   |/  /_\  \/   |   |'
@@ -20,9 +22,12 @@ echo ' / ______\____|__  / ______|'
 echo ' \/              \/\/       '
 
 git clone https://aur.archlinux.org/yay.git
+sleep 1
 cd yay
+sleep 1
 makepkg -si
 
+sleep 1 
 cd ~
 
 echo ' ________.______________ '
@@ -32,10 +37,12 @@ echo '\    \_\  \   | |    |   '
 echo ' \______  /___| |____|   '
 echo '        \/                '
 
-
+sleep 1
 mkdir .suckless && cd .suckless
 
 git clone https://github.com/Fayaz-246/archinstall-dots.git
+
+sleep 3
 
 cd dwm && sudo make clean install
 cd ../dmenu && sudo make clean install
@@ -45,6 +52,8 @@ cd ~
 
 mkdir .dwm
 
+sleep 1
+
 cd .dwm
 touch autostart.sh
 echo "#!/bin/bash" >> autostart.sh
@@ -52,6 +61,8 @@ echo "" >> autostart.sh
 echo "nitrogen --restore &" >> autostart.sh  
 echo "dunst &" >> autostart.sh 
 echo "dwmblocks" >> autostart.sh
+
+sleep 1
 
 echo '________   ____________________________'
 echo '\______ \  \_____  \__    ___/   _____/'
@@ -65,8 +76,6 @@ cd ~
 cd .config
 
 git clone https://github.com/Fayaz-246/archinstall-configs.git 
-
-rm LICENSE
 
 echo '___________ _______  ________  ___________________         _______________________________ ________   ___________________'
 echo '\_   _____/ \      \ \______ \ \_   _____/\______ \        \______   \_   _____/\______   \\_____  \  \_____  \__    ___/'
