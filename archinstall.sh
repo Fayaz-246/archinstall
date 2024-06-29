@@ -10,7 +10,7 @@ echo '       \__>       \/      \/         \/ '
 
 sudo pacman -Syu
 sudo pacman -S xorg
-sudo pacman -S git dunst nitrogen libx11 libxft libxinerama freetype2 fontconfig base-devel kitty bat thunar thunar-volman fastfetch
+sudo pacman -S git dunst nitrogen libx11 libxft libxinerama freetype2 fontconfig base-devel kitty bat thunar thunar-volman fastfetch ttf-mononoki-nerd
 
 sleep 5
 
@@ -40,12 +40,15 @@ echo '        \/                '
 sleep 1
 mkdir .suckless
 
-git clone https://github.com/Fayaz-246/archinstall-dots.git
+git clone https://github.com/Fayaz-246/archinstall-dots.git 
 
-mv dwm dwmblocks dmenu .suckless/
+cd archinstall-dots
+
+mv dwm dwmblocks dmenu ~/.suckless/ 
+cd ~
 cd .suckless
 
-sleep 3
+sleep 2
 
 cd dwm && sudo make clean install
 cd ../dmenu && sudo make clean install
@@ -78,7 +81,8 @@ cd ~
 
 cd .config
 
-git clone https://github.com/Fayaz-246/archinstall-configs.git 
+git clone https://github.com/Fayaz-246/archinstall-configs.git
+cd archinstall-configs
 mv kitty dunst ../
 
 echo '___________ _______  ________  ___________________         _______________________________ ________   ___________________'
